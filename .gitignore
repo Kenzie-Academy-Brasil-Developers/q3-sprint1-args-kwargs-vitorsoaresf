@@ -1,5 +1,7 @@
 .vscode
 */.vscode
+__pycache__
+.github
 .vscode/
 htmlcov/
 .tox/
@@ -14,3 +16,5 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 cover/
+venv
+.github
