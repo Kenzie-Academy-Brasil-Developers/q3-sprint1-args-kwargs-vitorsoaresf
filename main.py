@@ -35,5 +35,11 @@ def purchase_logger(**kwargs):
 
 
 def world_cup_logger(country, *args):
-    return f"{country} - {sorted(args)}"
+    list_years = [str(year) for year in args]
+    list_years = ', '.join(sorted(list_years))
+
+    last_position = list_years.rindex(',')
+    
+    list_years = list_years[0:last_position] + " e" + list_years[last_position+1:]
+    return f"{country} - {list_years}"
 
